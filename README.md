@@ -1,46 +1,209 @@
-# Fred Kaloki - Portfolio Website
+# Fred Kaloki — Portfolio Website
 
-🌟 About Me
-Hi there! I'm Fred Kaloki, an ambitious learner and aspiring professional at the intersection of Business, Accounting, and Technology. I'm currently pursuing a Bachelor of Commerce (BCom) at Egerton University while preparing for my Certified Public Accountant (CPA) qualification.
+Welcome to the repository for my personal portfolio website. This is a static, responsive portfolio built with HTML, CSS, and JavaScript and published via GitHub Pages.
 
-I believe in combining financial expertise with digital skills to prepare for the future of business. My journey has taken me from Upper Hill School to exploring the world of programming through PLP Academy, where I'm developing skills in Python, web development, and data science.
+## Live site
 
-🚀 Live Website
-Check out my live portfolio website:
-👉 <https://fredxotic.github.io/plp-webtechnologies-classroom-july2025-july-2025-final-project-and-deployment-Final-Project-and-Depl/>
+[fredxotic.github.io (portfolio)](https://fredxotic.github.io/plp-webtechnologies-classroom-july2025-july-2025-final-project-and-deployment-Final-Project-and-Depl/)
 
-🛠️ Technologies & Skills
-💼 Business & Accounting
-Financial Reporting & Analysis
+## About
 
-Budgeting & Forecasting
+I am Fred Kaloki — a Bachelor of Commerce (BCom) student at Egerton University and a CPA candidate. I combine business and accounting knowledge with digital and programming skills developed through PLP Academy. My focus areas include web development, Python, and data analysis.
 
-Commerce Fundamentals
+## Technologies & Skills
 
-CPA Preparation
+### Business & accounting
 
-💻 Technical Skills
-Python Programming: NumPy, Pandas, Scikit-learn, Matplotlib/Seaborn
+- Financial reporting and analysis
+- Budgeting and forecasting
+- Commerce fundamentals
+- CPA (in progress)
 
-Web Development: HTML, CSS, JavaScript
+### Technical
 
-Data Analysis: Excel, Statistical Analysis
+- Python: NumPy, Pandas, Scikit-learn, Matplotlib/Seaborn
+- Web: HTML, CSS, JavaScript
+- Data analysis: Excel, statistical analysis
+- Tools: Microsoft Office, Google Workspace, Git & GitHub
 
-Tools: Microsoft Office Suite, Google Workspace, Git & GitHub
+### Soft skills
 
-🌟 Soft Skills
-Teamwork & Collaboration
+- Teamwork and collaboration
+- Problem solving
+- Communication
+- Adaptability
+- Time management
 
-Problem-Solving
+## Project structure - Initial
 
-Communication
+Top-level repository layout:
 
-Adaptability
+```text
+portfolio-website/
+├── index.html          # Home page with hero section
+├── about.html          # About me and career goals
+├── education.html      # Education and certifications
+├── skills.html         # Skills with progress indicators
+├── projects.html       # Project portfolio
+├── contact.html        # Contact form and information
+├── css/
+│   ├── styles.css      # Main styling
+│   └── responsive.css   # Responsive design
+├── js/
+│   └── script.js       # Interactive functionality
+├── images/             # Portfolio assets
+└── README.md           # Project documentation
+```
 
-Time Management
+## Website features
 
-📁 Project Structure
-text
+- Responsive design across devices
+- Dark/Light mode with persistent preference
+- Interactive elements (progress bars, counters, modals)
+- Project showcase with modal views
+- Contact form with validation and feedback
+- Accessibility considerations (ARIA labels, keyboard navigation)
+- Performance optimizations with minimal external dependencies
+
+## Education & professional development
+
+- Bachelor of Commerce (BCom) — Egerton University (2024–Present)
+- Kenya Certificate of Secondary Education — Upper Hill School (2021–2024)
+- Certified Public Accountant (CPA) — In progress
+- PLP Academy — Digital skills program (programming, web development, data science)
+- Advanced Excel training — Business analysis and financial modeling
+
+## Deployment
+
+This site is deployed using GitHub Pages from the `main` branch and is served over HTTPS.
+
+High-level deployment steps:
+
+1. Push the repository to GitHub
+2. Enable GitHub Pages in repository settings
+3. Select `main` as the publishing source
+4. GitHub Pages publishes the site at the repository URL
+
+## Local development
+
+To run the project locally:
+
+```bash
+git clone https://github.com/fredxotic/plp-webtechnologies-classroom-july2025-july-2025-final-project-and-deployment-Final-Project-and-Depl.git
+# open index.html in your browser or serve the folder with a static server
+```
+
+## Contact
+
+- Email: `charlesfred285@gmail.com`
+- Phone: `+254 706 367 840`
+- Instagram: `@fredxotic`
+- GitHub: `fredxotic`
+- Location: Nairobi, Kenya
+
+Thank you for visiting my portfolio. Feel free to reach out for collaborations or questions about business and technology.
+
+```text
+portfolio-website/
+├── index.html          # Home page with hero section
+├── about.html          # About me and career goals
+├── education.html      # Education and certifications
+├── skills.html         # Skills with progress indicators
+├── projects.html       # Project portfolio
+├── contact.html        # Contact form and information
+# Fred Kaloki — Portfolio Website
+
+Welcome to the repository for my personal portfolio website. This static portfolio is built with HTML, CSS, and JavaScript and is published via GitHub Pages.
+
+## Live site
+
+The website is published on GitHub Pages:  
+[fredxotic.github.io (portfolio)](https://fredxotic.github.io/plp-webtechnologies-classroom-july2025-july-2025-final-project-and-deployment-Final-Project-and-Depl/)
+
+## Initial About
+
+I am Fred Kaloki — a Bachelor of Commerce (BCom) student at Egerton University and a CPA candidate. I combine business and accounting knowledge with digital and programming skills developed through PLP Academy. My focus areas include web development, Python, and data analysis.
+
+## Technologies & skills
+
+### Business & accounting
+
+- Financial reporting and analysis
+- Budgeting and forecasting
+- Commerce fundamentals
+- CPA (in progress)
+
+### Technical
+
+- Python: NumPy, Pandas, Scikit-learn, Matplotlib/Seaborn
+- Web: HTML, CSS, JavaScript
+- Data analysis: Excel, statistical analysis
+- Tools: Microsoft Office, Google Workspace, Git & GitHub
+
+### Soft skills
+
+- Teamwork and collaboration
+- Problem solving
+- Communication
+- Adaptability
+- Time management
+
+## Project structure
+
+Top-level repository layout:
+
+```text
+portfolio-website/
+├── index.html          # Home page with hero section
+├── about.html          # About me and career goals
+├── education.html      # Education and certifications
+├── skills.html         # Skills with progress indicators
+├── projects.html       # Project portfolio
+├── contact.html        # Contact form and information
+├── css/
+│   ├── styles.css      # Main styling
+# Fred Kaloki — Portfolio Website
+
+Welcome to the repos/fix MD024/no-duplicate-heading: Multiple headings with the same contentitory for my personal portfolio website. This is a static, responsive portfolio built with HTML, CSS, and JavaScript and published via GitHub Pages.
+
+## Live site
+
+The site is published on GitHub Pages:  
+[fredxotic.github.io (portfolio)](https://fredxotic.github.io/plp-webtechnologies-classroom-july2025-july-2025-final-project-and-deployment-Final-Project-and-Depl/)
+
+## About
+
+I am Fred Kaloki — a Bachelor of Commerce (BCom) student at Egerton University and a CPA candidate. I combine business and accounting knowledge with digital and programming skills developed through PLP Academy. My focus areas include web development, Python, and data analysis.
+
+## Technologies & skills
+
+### Business & accounting
+
+- Financial reporting and analysis
+- Budgeting and forecasting
+- Commerce fundamentals
+- CPA (in progress)
+
+### Technical
+
+- Python: NumPy, Pandas, Scikit-learn, Matplotlib/Seaborn
+- Web: HTML, CSS, JavaScript
+- Data analysis: Excel, statistical analysis
+- Tools: Microsoft Office, Google Workspace, Git & GitHub
+
+### Soft skills
+
+- Teamwork and collaboration
+- Problem solving
+- Communication
+- Adaptability
+- Time management
+
+## Project structure
+
+Top-level repository layout:
+
+```text
 portfolio-website/
 ├── index.html          # Home page with hero section
 ├── about.html          # About me and career goals
@@ -55,80 +218,52 @@ portfolio-website/
 │   └── script.js       # Interactive functionality
 ├── images/             # Portfolio assets
 └── README.md           # Project documentation
-✨ Website Features
-Responsive Design: Works perfectly on all devices
+```
 
-Dark/Light Mode: Toggle between themes with persistent preferences
+## Website features
 
-Interactive Elements: Animated progress bars, counters, and modals
+- Responsive design across devices
+- Dark/Light mode with persistent preference
+- Interactive elements (progress bars, counters, modals)
+- Project showcase with modal views
+- Contact form with validation and feedback
+- Accessibility considerations (ARIA labels, keyboard navigation)
+- Performance optimizations with minimal external dependencies
 
-Project Showcase: Detailed project presentations with modal views
+## Education & professional development
 
-Contact Form: With validation and user-friendly feedback
+- Bachelor of Commerce (BCom) — Egerton University (2024–Present)
+- Kenya Certificate of Secondary Education — Upper Hill School (2021–2024)
+- Certified Public Accountant (CPA) — In progress
+- PLP Academy — Digital skills program (programming, web development, data science)
+- Advanced Excel training — Business analysis and financial modeling
 
-Accessibility: ARIA labels, keyboard navigation, and screen reader support
+## Deployment
 
-Performance Optimized: Fast loading with minimal external dependencies
+This site is deployed using GitHub Pages from the `main` branch and is served over HTTPS.
 
-🎓 Education & Development
-Formal Education
-Bachelor of Commerce (BCom) - Egerton University (2024-Present)
+High-level deployment steps:
 
-Kenya Certificate of Secondary Education - Upper Hill School (2021-2024)
+1. Push the repository to GitHub
+2. Enable GitHub Pages in repository settings
+3. Select `main` as the publishing source
+4. GitHub Pages publishes the site at the repository URL
 
-Professional Development
-Certified Public Accountant (CPA) - In progress
+## Local development
 
-PLP Academy - Digital skills program focusing on programming and innovation
+To run the project locally:
 
-Advanced Excel Training - Business analysis and financial modeling
+```bash
+git clone https://github.com/fredxotic/plp-webtechnologies-classroom-july2025-july-2025-final-project-and-deployment-Final-Project-and-Depl.git
+# open index.html in your browser or serve the folder with a static server
+```
 
-📈 Skills Development Timeline
-My learning journey has evolved through several phases:
+## Contact
 
-2021-2024: Foundation in business studies and analytical thinking at Upper Hill School
+- Email: `charlesfred285@gmail.com`
+- Phone: `+254 706 367 840`
+- Instagram: `@fredxotic`
+- GitHub: `fredxotic`
+- Location: Nairobi, Kenya
 
-2024: Advanced accounting principles and introduction to digital tools
-
-2025: Python programming, web development basics, and CPA preparation
-
-2025: Intensive skill development through PLP Academy and university studies
-
-🌐 Deployment
-This portfolio is deployed using GitHub Pages, which provides:
-
-Free hosting for static websites
-
-Automatic deployment from the main branch
-
-Custom domain support (optional)
-
-SSL encryption for security
-
-The deployment process was straightforward:
-
-Pushed code to GitHub repository
-Enabled GitHub Pages in repository settings
-Selected the main branch as the source
-The site was automatically published at the provided URL
-
-## 🔧 Local Development
-
-To run this project locally:
-
-Clone the repository:
-
-📫 Let's Connect!
-I'm always open to discussing new opportunities, collaborations, or just having a conversation about business, technology, or accounting.
-
-Email: <charlesfred285@gmail.com>
-
-Phone: +254 706 367 840
-
-Instagram: @fredxotic
-
-GitHub: fredxotic
-
-Location: Nairobi, Kenya
-
-Thanks for visiting my portfolio! Feel free to reach out if you'd like to collaborate or just chat about the intersection of business and technology.
+Thank you for visiting my portfolio. Feel free to reach out for collaborations or questions about business and technology.
