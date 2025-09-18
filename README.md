@@ -1,104 +1,134 @@
-# Fred Kaloki — Personal Portfolio
+# Fred Kaloki - Portfolio Website
 
-This repository contains a responsive personal portfolio website for Fred Kaloki(me). The site showcases education, skills, projects, and contact information, built with HTML, CSS, and JavaScript and designed to be lightweight and easy to host as a static site.
+🌟 About Me
+Hi there! I'm Fred Kaloki, an ambitious learner and aspiring professional at the intersection of Business, Accounting, and Technology. I'm currently pursuing a Bachelor of Commerce (BCom) at Egerton University while preparing for my Certified Public Accountant (CPA) qualification.
 
-## Overview
+I believe in combining financial expertise with digital skills to prepare for the future of business. My journey has taken me from Upper Hill School to exploring the world of programming through PLP Academy, where I'm developing skills in Python, web development, and data science.
 
-The portfolio is focused on presenting a blend of Business/Accounting background and growing technical skills (Python, data analysis, and web development). It includes:
+🚀 Live Website
+Check out my live portfolio website:
+👉 <https://fredxotic.github.io/plp-webtechnologies-classroom-july2025-july-2025-final-project-and-deployment-Final-Project-and-Depl/>
 
-- A hero section with a theme (dark/light) toggle and quick contact actions.
-- Detailed pages for About, Education, Skills, Projects, and Contact.
-- Interactive UI elements: animated skill progress bars, counters, project modals, FAQ accordion, mobile menu, and a back-to-top button.
-- Accessibility-minded enhancements (ARIA attributes, live region for skill announcements).
+🛠️ Technologies & Skills
+💼 Business & Accounting
+Financial Reporting & Analysis
 
-## Features
+Budgeting & Forecasting
 
-- Responsive layout — designed to work across phones, tablets, and desktops.
-- Dark / Light theme toggle preserving preference in `localStorage`.
-- Animated skill progress bars and counters.
-- Project cards that open modal detail views.
-- Contact form with frontend validation.
-- Mobile-friendly menu and keyboard accessibility (Escape to close modals/menus).
-- Uses Lucide icons and Tailwind utility classes (via CDN in markup).
+Commerce Fundamentals
 
-## Pages
+CPA Preparation
 
-- `index.html` — Home / Hero and previews of about, education, skills, and projects.
-- `about.html` — More detailed personal background, interests, and career goals.
-- `education.html` — Education history, training, certifications, and professional development.
-- `skills.html` — Detailed skills with animated progress bars and a skills development timeline.
-- `projects.html` — Project gallery with modal details for each project.
-- `contact.html` — Contact information, contact form, and FAQ.
+💻 Technical Skills
+Python Programming: NumPy, Pandas, Scikit-learn, Matplotlib/Seaborn
 
-## Tech Stack
+Web Development: HTML, CSS, JavaScript
 
-- HTML5
-- CSS (custom styles + responsive rules in `css/`) — Tailwind utility classes are used via CDN.
-- JavaScript (`js/script.js`) — page behavior (theme toggle, animations, modals, form validation).
-- Icons: Lucide (via CDN)
+Data Analysis: Excel, Statistical Analysis
 
-## File structure
+Tools: Microsoft Office Suite, Google Workspace, Git & GitHub
 
-```text
-/ (project root)
-├─ index.html
-├─ about.html
-├─ education.html
-├─ skills.html
-├─ projects.html
-├─ contact.html
-├─ css/
-│  ├─ styles.css
-│  └─ responsive.css
-├─ js/
-│  └─ script.js
-├─ images/
-│  └─ me.jpg (or me.png)
-└─ README.md
-```
+🌟 Soft Skills
+Teamwork & Collaboration
 
-## Run locally
+Problem-Solving
 
-You can serve the site locally with a simple static server. From the project root run one of the following commands:
+Communication
 
-- Using Python 3:
+Adaptability
 
-```bash
-python3 -m http.server 8000
-```
+Time Management
 
-- Open your browser to `http://localhost:8000/` and navigate the pages. This ensures relative paths to CSS/JS/images work correctly.
+📁 Project Structure
+text
+portfolio-website/
+├── index.html          # Home page with hero section
+├── about.html          # About me and career goals
+├── education.html      # Education and certifications
+├── skills.html         # Skills with progress indicators
+├── projects.html       # Project portfolio
+├── contact.html        # Contact form and information
+├── css/
+│   ├── styles.css      # Main styling
+│   └── responsive.css  # Responsive design
+├── js/
+│   └── script.js       # Interactive functionality
+├── images/             # Portfolio assets
+└── README.md           # Project documentation
+✨ Website Features
+Responsive Design: Works perfectly on all devices
 
-## Development notes
+Dark/Light Mode: Toggle between themes with persistent preferences
 
-- Main JavaScript behavior is in `js/script.js`. Recent improvements include IntersectionObserver-based skill animations, staggered progress-bar delays, and ARIA attributes for better accessibility.
-- Styles live in `css/styles.css` and `css/responsive.css`. The project uses custom CSS variables for color themes and small helper classes like `.sr-only` for screen-reader-only content.
-- Icons are loaded from Lucide via CDN; Tailwind is used through the Tailwind CDN script tag.
+Interactive Elements: Animated progress bars, counters, and modals
 
-### Editing tips
+Project Showcase: Detailed project presentations with modal views
 
-- To change a skill percentage, edit the `data-skill-level` attribute on the progress bar elements in `skills.html` — the JavaScript normalizes numeric values to percentages.
-- To add a project, create a new `.project-card` entry in `projects.html` and add the corresponding content in the `projectData` object inside `js/script.js` (used by the modal logic).
+Contact Form: With validation and user-friendly feedback
 
-## Accessibility
+Accessibility: ARIA labels, keyboard navigation, and screen reader support
 
-- Progress bars include `role="progressbar"`, `aria-valuenow`, and `aria-valuetext` attributes to convey state to assistive tech.
-- A hidden `aria-live` region announces loaded skills when the animation runs.
-- Keyboard accessibility: Escape closes open modals and the mobile menu.
+Performance Optimized: Fast loading with minimal external dependencies
 
-## Testing & Validation
+🎓 Education & Development
+Formal Education
+Bachelor of Commerce (BCom) - Egerton University (2024-Present)
 
-- Quick syntax check for `js/script.js` can be done with Node:
+Kenya Certificate of Secondary Education - Upper Hill School (2021-2024)
 
-```bash
-node --check js/script.js
-```
+Professional Development
+Certified Public Accountant (CPA) - In progress
 
-- Manually test in multiple viewports, and check keyboard navigation and a screen reader to confirm announcements and focus behavior.
+PLP Academy - Digital skills program focusing on programming and innovation
 
-## Contact
+Advanced Excel Training - Business analysis and financial modeling
 
-- Email: `charlesfred285@gmail.com`
-- Phone: `+254 706 367 840`
-- GitHub: [https://github.com/fredxotic](https://github.com/fredxotic)
-- Instagram: [https://www.instagram.com/fredxotic](https://www.instagram.com/fredxotic)
+📈 Skills Development Timeline
+My learning journey has evolved through several phases:
+
+2021-2024: Foundation in business studies and analytical thinking at Upper Hill School
+
+2024: Advanced accounting principles and introduction to digital tools
+
+2025: Python programming, web development basics, and CPA preparation
+
+2025: Intensive skill development through PLP Academy and university studies
+
+🌐 Deployment
+This portfolio is deployed using GitHub Pages, which provides:
+
+Free hosting for static websites
+
+Automatic deployment from the main branch
+
+Custom domain support (optional)
+
+SSL encryption for security
+
+The deployment process was straightforward:
+
+Pushed code to GitHub repository
+Enabled GitHub Pages in repository settings
+Selected the main branch as the source
+The site was automatically published at the provided URL
+
+## 🔧 Local Development
+
+To run this project locally:
+
+Clone the repository:
+
+📫 Let's Connect!
+I'm always open to discussing new opportunities, collaborations, or just having a conversation about business, technology, or accounting.
+
+Email: <charlesfred285@gmail.com>
+
+Phone: +254 706 367 840
+
+Instagram: @fredxotic
+
+GitHub: fredxotic
+
+Location: Nairobi, Kenya
+
+Thanks for visiting my portfolio! Feel free to reach out if you'd like to collaborate or just chat about the intersection of business and technology.
