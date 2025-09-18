@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Fred Kaloki</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body class="bg-[var(--bg-primary)] text-[var(--text-primary)] font-sans leading-relaxed tracking-wide">
+    <!-- Loading Screen -->
+    <div id="loading" class="fixed inset-0 bg-[var(--bg-primary)] flex items-center justify-center z-50 transition-opacity duration-500">
+        <div class="loader ease-linear rounded-full border-4 border-t-4 border-gray-200 h-12 w-12"></div>
+    </div>
+
+    <!-- Theme Toggle Button -->
+    <button id="themeToggle" class="fixed top-4 right-4 z-50 h-12 w-12 flex items-center justify-center bg-[var(--bg-secondary)] text-[var(--accent)] hover:bg-[var(--accent)] hover:text-white transition-all duration-300 rounded-full shadow-lg hover:shadow-xl transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-[var(--accent)] focus:ring-opacity-50" aria-label="Toggle theme">
+        <i data-lucide="sun" id="themeIcon" style="width: 24px; height: 24px;"></i>
+    </button>
+
+    <!-- Mobile Menu Button -->
+    <button id="mobileMenuButton" class="fixed top-4 left-4 z-50 h-12 w-12 md:hidden flex items-center justify-center bg-[var(--bg-secondary)] text-[var(--accent)] hover:bg-[var(--accent)] hover:text-white transition-all duration-300 rounded-full shadow-lg hover:shadow-xl transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-[var(--accent)] focus:ring-opacity-50" aria-label="Open menu">
+        <i data-lucide="menu" style="width: 24px; height: 24px;"></i>
+    </button>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="mobile-menu fixed inset-0 bg-[var(--bg-primary)] bg-opacity-95 backdrop-blur-sm z-40 flex flex-col items-center justify-center md:hidden">
+        <button id="closeMenu" class="absolute top-4 right-4 h-12 w-12 flex items-center justify-center text-[var(--accent)]">
+            <i data-lucide="x" style="width: 24px; height: 24px;"></i>
+        </button>
+        <div class="flex flex-col space-y-8 text-center">
+            <a href="index.html" class="text-2xl font-medium text-[var(--text-primary)] hover:text-[var(--accent)] transition-colors duration-300">Home</a>
+            <a href="about.html" class="text-2xl font-medium text-[var(--text-primary)] hover:text-[var(--accent)] transition-colors duration-300">About</a>
+            <a href="education.html" class="text-2xl font-medium text-[var(--text-primary)] hover:text-[var(--accent)] transition-colors duration-300">Education</a>
+            <a href="skills.html" class="text-2xl font-medium text-[var(--text-primary)] hover:text-[var(--accent)] transition-colors duration-300">Skills</a>
+            <a href="projects.html" class="text-2xl font-medium text-[var(--text-primary)] hover:text-[var(--accent)] transition-colors duration-300">Projects</a>
+            <a href="contact.html" class="text-2xl font-medium text-[var(--text-primary)] hover:text-[var(--accent)] transition-colors duration-300">Contact</a>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 right-0 z-30 bg-[var(--bg-primary)] bg-opacity-80 backdrop-blur-sm shadow-xl py-4 transition-all duration-300 hidden md:block">
+        <div class="max-w-7xl mx-auto flex justify-center overflow-x-auto whitespace-nowrap px-4 scrollbar-thin">
+            <a href="index.html" class="nav-item py-2 px-3 sm:px-4 rounded-full text-xs sm:text-base font-medium transition-all duration-300 text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:bg-[var(--bg-secondary)]">Home</a>
+            <a href="about.html" class="nav-item py-2 px-3 sm:px-4 rounded-full text-xs sm:text-base font-medium transition-all duration-300 text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:bg-[var(--bg-secondary)]">About</a>
+            <a href="education.html" class="nav-item py-2 px-3 sm:px-4 rounded-full text-xs sm:text-base font-medium transition-all duration-300 text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:bg-[var(--bg-secondary)]">Education</a>
+            <a href="skills.html" class="nav-item py-2 px-3 sm:px-4 rounded-full text-xs sm:text-base font-medium transition-all duration-300 text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:bg-[var(--bg-secondary)]">Skills</a>
+            <a href="projects.html" class="nav-item py-2 px-3 sm:px-4 rounded-full text-xs sm:text-base font-medium transition-all duration-300 text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:bg-[var(--bg-secondary)]">Projects</a>
+            <a href="contact.html" class="nav-item py-2 px-3 sm:px-4 rounded-full text-xs sm:text-base font-medium transition-all duration-300 text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:bg-[var(--bg-secondary)]">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="fixed bottom-8 right-8 z-40 h-14 w-14 flex items-center justify-center bg-[var(--bg-secondary)] text-[var(--accent)] hover:bg-[var(--accent)] hover:text-white transition-all duration-300 rounded-full shadow-lg hover:shadow-xl transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-[var(--accent)] focus:ring-opacity-50 opacity-0 invisible" aria-label="Back to top">
+        <i data-lucide="arrow-up" style="width: 24px; height: 24px;"></i>
+    </button>
+
+    <!-- Main Content -->
+    <main class="pt-24 pb-16">
+        <!-- Projects Section -->
+        <section id="projects" class="py-16 md:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[var(--text-primary)] text-center mb-12 sm:mb-16 tracking-tight">Projects</h2>
+            <div class="grid md:grid-cols-2 gap-8 md:gap-12">
+                <!-- Personal Portfolio Website -->
+                <div class="project-card bg-[var(--bg-secondary)] rounded-3xl p-6 shadow-xl border border-[var(--border)] transform hover:scale-[1.02] transition-transform duration-300 cursor-pointer" data-project="portfolio">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <i data-lucide="file-text" class="text-[var(--accent)]" style="width: 24px; height: 24px;"></i>
+                        <h3 class="text-xl font-bold text-[var(--text-primary)]">Personal Portfolio Website</h3>
+                    </div>
+                    <p class="text-[var(--text-secondary)] leading-relaxed">Designing and building a personal portfolio website to showcase my education, skills, and career journey. Using HTML, CSS, JavaScript, and planning to integrate Python for backend functionality. Goal: Create a professional online presence to share projects and achievements.</p>
+                    <div class="mt-4 flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-[var(--bg-primary)] text-[var(--accent)] text-sm rounded-full">HTML</span>
+                        <span class="px-3 py-1 bg-[var(--bg-primary)] text-[var(--accent)] text-sm rounded-full">CSS</span>
+                        <span class="px-3 py-1 bg-[var(--bg-primary)] text-[var(--accent)] text-sm rounded-full">JavaScript</span>
+                        <span class="px-3 py-1 bg-[var(--bg-primary)] text-[var(--accent)] text-sm rounded-full">Responsive Design</span>
+                    </div>
+                </div>
+                <!-- Data Analysis Mini-Project -->
+                <div class="project-card bg-[var(--bg-secondary)] rounded-3xl p-6 shadow-xl border border-[var(--border)] transform hover:scale-[1.02] transition-transform duration-300 cursor-pointer" data-project="data-analysis">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <i data-lucide="file-text" class="text-[var(--accent)]" style="width: 24px; height: 24px;"></i>
+                        <h3 class="text-xl font-bold text-[var(--text-primary)]">Data Analysis Mini-Project</h3>
+                    </div>
+                    <p class="text-[var(--text-secondary)] leading-relaxed">Exploring data analysis with Python (Pandas, Matplotlib) and Excel. Example project: analyzing financial or business datasets to extract insights. Goal: Build hands-on experience in data science and demonstrate practical application of analytical tools.</p>
+                    <div class="mt-4 flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-[var(--bg-primary)] text-[var(--accent)] text-sm rounded-full">Python</span>
+                        <span class="px-3 py-1 bg-[var(--bg-primary)] text-[var(--accent)] text-sm rounded-full">Pandas</span>
+                        <span class="px-3 py-1 bg-[var(--bg-primary)] text-[var(--accent)] text-sm rounded-full">Excel</span>
+                        <span class="px-3 py-1 bg-[var(--bg-primary)] text-[var(--accent)] text-sm rounded-full">Data Visualization</span>
+                    </div>
+                </div>
+                <!-- PLP Academy Collaborative Project -->
+                <div class="project-card bg-[var(--bg-secondary)] rounded-3xl p-6 shadow-xl border border-[var(--border)] transform hover:scale-[1.02] transition-transform duration-300 cursor-pointer" data-project="plp">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <i data-lucide="file-text" class="text-[var(--accent)]" style="width: 24px; height: 24px;"></i>
+                        <h3 class="text-xl font-bold text-[var(--text-primary)]">PLP Academy Collaborative Project</h3>
+                    </div>
+                    <p class="text-[var(--text-secondary)] leading-relaxed">Working with peers to develop a real-world project under the PLP Academy program. Focus: solving a problem using programming and digital tools. Expected outcomes: enhanced teamwork, problem-solving, and coding skills.</p>
+                    <div class="mt-4 flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-[var(--bg-primary)] text-[var(--accent)] text-sm rounded-full">Teamwork</span>
+                        <span class="px-3 py-1 bg-[var(--bg-primary)] text-[var(--accent)] text-sm rounded-full">Problem Solving</span>
+                        <span class="px-3 py-1 bg-[var(--bg-primary)] text-[var(--accent)] text-sm rounded-full">Collaboration</span>
+                        <span class="px-3 py-1 bg-[var(--bg-primary)] text-[var(--accent)] text-sm rounded-full">Project Management</span>
+                    </div>
+                </div>
+                <!-- Web Development Practice Projects -->
+                <div class="project-card bg-[var(--bg-secondary)] rounded-3xl p-6 shadow-xl border border-[var(--border)] transform hover:scale-[1.02] transition-transform duration-300 cursor-pointer" data-project="web-dev">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <i data-lucide="file-text" class="text-[var(--accent)]" style="width: 24px; height: 24px;"></i>
+                        <h3 class="text-xl font-bold text-[var(--text-primary)]">Web Development Practice Projects</h3>
+                    </div>
+                    <p class="text-[var(--text-secondary)] leading-relaxed">Building small applications and websites to strengthen frontend and backend knowledge. Examples include: a task manager app, a personal blog, and a finance tracker. Goal: Gain practical coding experience and showcase web development skills.</p>
+                    <div class="mt-4 flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-[var(--bg-primary)] text-[var(--accent)] text-sm rounded-full">HTML</span>
+                        <span class="px-3 py-1 bg-[var(--bg-primary)] text-[var(--accent)] text-sm rounded-full">CSS</span>
+                        <span class="px-3 py-1 bg-[var(--bg-primary)] text-[var(--accent)] text-sm rounded-full">JavaScript</span>
+                        <span class="px-3 py-1 bg-[var(--bg-primary)] text-[var(--accent)] text-sm rounded-full">UI/UX Design</span>
+                    </div>
+                </div>
+                <!-- Financial Accounting Simulation -->
+                <div class="project-card bg-[var(--bg-secondary)] rounded-3xl p-6 shadow-xl border border-[var(--border)] transform hover:scale-[1.02] transition-transform duration-300 cursor-pointer" data-project="finance">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <i data-lucide="file-text" class="text-[var(--accent)]" style="width: 24px; height: 24px;"></i>
+                        <h3 class="text-xl font-bold text-[var(--text-primary)]">Financial Accounting Simulation</h3>
+                    </div>
+                    <p class="text-[var(--text-secondary)] leading-relaxed">Developing a mock project that simulates bookkeeping and financial reporting using Excel and Python. Goal: integrate business knowledge from BCom/CPA with technical tools to automate accounting processes.</p>
+                    <div class="mt-4 flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-[var(--bg-primary)] text-[var(--accent)] text-sm rounded-full">Excel</span>
+                        <span class="px-3 py-1 bg-[var(--bg-primary)] text-[var(--accent)] text-sm rounded-full">Python</span>
+                        <span class="px-3 py-1 bg-[var(--bg-primary)] text-[var(--accent)] text-sm rounded-full">Accounting</span>
+                        <span class="px-3 py-1 bg-[var(--bg-primary)] text-[var(--accent)] text-sm rounded-full">Automation</span>
+                    </div>
+                </div>
+                <!-- Business Case Study -->
+                <div class="project-card bg-[var(--bg-secondary)] rounded-3xl p-6 shadow-xl border border-[var(--border)] transform hover:scale-[1.02] transition-transform duration-300 cursor-pointer" data-project="case-study">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <i data-lucide="file-text" class="text-[var(--accent)]" style="width: 24px; height: 24px;"></i>
+                        <h3 class="text-xl font-bold text-[var(--text-primary)]">Business Case Study Analysis</h3>
+                    </div>
+                    <p class="text-[var(--text-secondary)] leading-relaxed">Analyzing real-world business cases to understand financial decision-making, market strategies, and operational challenges. Applying theoretical knowledge from BCom studies to practical business scenarios.</p>
+                    <div class="mt-4 flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-[var(--bg-primary)] text-[var(--accent)] text-sm rounded-full">Business Analysis</span>
+                        <span class="px-3 py-1 bg-[var(--bg-primary)] text-[var(--accent)] text-sm rounded-full">Financial Modeling</span>
+                        <span class="px-3 py-1 bg-[var(--bg-primary)] text-[var(--accent)] text-sm rounded-full">Strategic Thinking</span>
+                        <span class="px-3 py-1 bg-[var(--bg-primary)] text-[var(--accent)] text-sm rounded-full">Market Research</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Modals -->
+        <div id="projectModal" class="modal fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 p-4 invisible">
+            <div class="bg-[var(--bg-secondary)] rounded-3xl p-6 max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+                <div class="flex justify-between items-center mb-6">
+                    <h3 id="modalTitle" class="text-2xl font-bold text-[var(--text-primary)]"></h3>
+                    <button id="closeModal" class="text-[var(--text-secondary)] hover:text-[var(--accent)]">
+                        <i data-lucide="x" style="width: 24px; height: 24px;"></i>
+                    </button>
+                </div>
+                <div id="modalContent" class="text-[var(--text-secondary)]"></div>
+            </div>
+        </div>
+
+        <!-- Project Development Process -->
+        <section id="projectProcess" class="py-16 md:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[var(--text-primary)] text-center mb-12 sm:mb-16 tracking-tight">My Project Development Process</h2>
+            <div class="bg-[var(--bg-secondary)] rounded-3xl p-6 shadow-xl border border-[var(--border)]">
+                <div class="grid md:grid-cols-4 gap-8">
+                    <!-- Research -->
+                    <div class="text-center">
+                        <div class="bg-[var(--accent)] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i data-lucide="search" class="text-white" style="width: 24px; height: 24px;"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-[var(--text-primary)] mb-2">Research</h3>
+                        <p class="text-[var(--text-secondary)]">Thoroughly understanding the problem domain, requirements, and existing solutions before starting development.</p>
+                    </div>
+                    <!-- Planning -->
+                    <div class="text-center">
+                        <div class="bg-[var(--accent)] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i data-lucide="clipboard-list" class="text-white" style="width: 24px; height: 24px;"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-[var(--text-primary)] mb-2">Planning</h3>
+                        <p class="text-[var(--text-secondary)]">Creating detailed plans, wireframes, and architecture diagrams to guide the development process.</p>
+                    </div>
+                    <!-- Development -->
+                    <div class="text-center">
+                        <div class="bg-[var(--accent)] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i data-lucide="code" class="text-white" style="width: 24px; height: 24px;"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-[var(--text-primary)] mb-2">Development</h3>
+                        <p class="text-[var(--text-secondary)]">Implementing the solution using appropriate technologies while following best practices and coding standards.</p>
+                    </div>
+                    <!-- Testing -->
+                    <div class="text-center">
+                        <div class="bg-[var(--accent)] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i data-lucide="check-circle" class="text-white" style="width: 24px; height: 24px;"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-[var(--text-primary)] mb-2">Testing & Refinement</h3>
+                        <p class="text-[var(--text-secondary)]">Rigorous testing, gathering feedback, and making iterative improvements to ensure quality results.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer with Contact Info -->
+    <footer class="bg-[var(--bg-primary)] py-16">
+        <div class="max-w-xl mx-auto text-center px-4">
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-[var(--text-primary)] mb-4">Get In Touch</h2>
+            <p class="text-[var(--text-secondary)] mb-8">I'm always open to new opportunities and collaborations. Feel free to reach out!</p>
+            
+            <div class="flex justify-center space-x-6 mb-8">
+                <a href="mailto:charlesfred285@gmail.com" target="_blank" rel="noopener noreferrer" class="h-14 w-14 flex items-center justify-center bg-[var(--bg-secondary)] text-[var(--accent)] hover:bg-[var(--accent)] hover:text-white transition-all duration-300 rounded-full shadow-lg hover:shadow-xl transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-[var(--accent)] focus:ring-opacity-50" aria-label="Email">
+                    <i data-lucide="mail" style="width: 24px; height: 24px;"></i>
+                </a>
+                <a href="tel:+254706367840" target="_blank" rel="noopener noreferrer" class="h-14 w-14 flex items-center justify-center bg-[var(--bg-secondary)] text-[var(--accent)] hover:bg-[var(--accent)] hover:text-white transition-all duration-300 rounded-full shadow-lg hover:shadow-xl transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-[var(--accent)] focus:ring-opacity-50" aria-label="Phone">
+                    <i data-lucide="smartphone" style="width: 24px; height: 24px;"></i>
+                </a>
+                <a href="https://www.instagram.com/fredxotic" target="_blank" rel="noopener noreferrer" class="h-14 w-14 flex items-center justify-center bg-[var(--bg-secondary)] text-[var(--accent)] hover:bg-[var(--accent)] hover:text-white transition-all duration-300 rounded-full shadow-lg hover:shadow-xl transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-[var(--accent)] focus:ring-opacity-50" aria-label="Instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" /><path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M16.5 7.5l0 .01" /></svg>
+                </a>
+                <a href="https://github.com/fredxotic" target="_blank" rel="noopener noreferrer" class="h-14 w-14 flex items-center justify-center bg-[var(--bg-secondary)] text-[var(--accent)] hover:bg-[var(--accent)] hover:text-white transition-all duration-300 rounded-full shadow-lg hover:shadow-xl transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-[var(--accent)] focus:ring-opacity-50" aria-label="GitHub">
+                    <i data-lucide="github" style="width: 24px; height: 24px;"></i>
+                </a>
+            </div>
+            
+            <a href="contact.html" class="inline-block px-6 py-3 bg-[var(--accent)] text-white font-medium rounded-full hover:bg-opacity-90 transition-all duration-300 transform hover:scale-105 shadow-md">
+                Contact Me
+            </a>
+            
+            <div class="mt-12 text-sm text-[var(--text-secondary)]">
+                <p>&copy; 2025 Fred Kaloki. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
