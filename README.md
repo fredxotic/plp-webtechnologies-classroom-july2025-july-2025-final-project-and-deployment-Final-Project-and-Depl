@@ -1,6 +1,6 @@
 # Fred Kaloki — Personal Portfolio
 
-This repository contains a responsive personal portfolio website for Fred Kaloki. The site showcases education, skills, projects, and contact information, built with HTML, CSS, and JavaScript and designed to be lightweight and easy to host as a static site.
+This repository contains a responsive personal portfolio website for Fred Kaloki(me). The site showcases education, skills, projects, and contact information, built with HTML, CSS, and JavaScript and designed to be lightweight and easy to host as a static site.
 
 ## Overview
 
