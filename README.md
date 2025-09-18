@@ -1,90 +1,104 @@
-# 📦 Final Assignment: Build, Organize, and Deploy a Multipage Website
+# Fred Kaloki — Personal Portfolio
 
-You're now ready to bring everything together—HTML, CSS, JavaScript, planning, structure, and deployment. This final project challenges you to **conceptualize, build, and deploy a multi-page website** that is responsive, interactive, and ready for the real world.
+This repository contains a responsive personal portfolio website for Fred Kaloki. The site showcases education, skills, projects, and contact information, built with HTML, CSS, and JavaScript and designed to be lightweight and easy to host as a static site.
 
-This assignment will guide you from planning your site all the way to deploying it online. Let’s make your project *production-worthy*! 🚀
+## Overview
 
----
+The portfolio is focused on presenting a blend of Business/Accounting background and growing technical skills (Python, data analysis, and web development). It includes:
 
-## 🌐🎯 Part 1: Planning and Organizing a Multipage Website
+- A hero section with a theme (dark/light) toggle and quick contact actions.
+- Detailed pages for About, Education, Skills, Projects, and Contact.
+- Interactive UI elements: animated skill progress bars, counters, project modals, FAQ accordion, mobile menu, and a back-to-top button.
+- Accessibility-minded enhancements (ARIA attributes, live region for skill announcements).
 
-Before you write any code, take time to plan:
+## Features
 
-* Define your website's purpose (portfolio, product showcase, blog, etc.)
-* Outline 3–5 pages (e.g., Home, About, Services, Contact, Gallery)
-* Sketch or describe the layout of each page
-* Map out internal navigation (how pages link to one another)
+- Responsive layout — designed to work across phones, tablets, and desktops.
+- Dark / Light theme toggle preserving preference in `localStorage`.
+- Animated skill progress bars and counters.
+- Project cards that open modal detail views.
+- Contact form with frontend validation.
+- Mobile-friendly menu and keyboard accessibility (Escape to close modals/menus).
+- Uses Lucide icons and Tailwind utility classes (via CDN in markup).
 
-**Goal:** Show intentional structure and user journey across the site.
+## Pages
 
----
+- `index.html` — Home / Hero and previews of about, education, skills, and projects.
+- `about.html` — More detailed personal background, interests, and career goals.
+- `education.html` — Education history, training, certifications, and professional development.
+- `skills.html` — Detailed skills with animated progress bars and a skills development timeline.
+- `projects.html` — Project gallery with modal details for each project.
+- `contact.html` — Contact information, contact form, and FAQ.
 
-## 🌍💻 Part 2: Build the Website Using HTML5, CSS, and JavaScript
+## Tech Stack
 
-Using your plan, begin building:
+- HTML5
+- CSS (custom styles + responsive rules in `css/`) — Tailwind utility classes are used via CDN.
+- JavaScript (`js/script.js`) — page behavior (theme toggle, animations, modals, form validation).
+- Icons: Lucide (via CDN)
 
-* Use HTML5 for semantic structure
-* Apply CSS for responsive layout, styling, and animations
-* Use JavaScript to add interactivity (menus, forms, toggles, dynamic content)
+## File structure
 
-Each page should:
+```text
+/ (project root)
+├─ index.html
+├─ about.html
+├─ education.html
+├─ skills.html
+├─ projects.html
+├─ contact.html
+├─ css/
+│  ├─ styles.css
+│  └─ responsive.css
+├─ js/
+│  └─ script.js
+├─ images/
+│  └─ me.jpg (or me.png)
+└─ README.md
+```
 
-* Be mobile-responsive
-* Share a consistent layout/header/footer
-* Include at least one interactive element (e.g., form validation, toggle menu, animation on scroll)
+## Run locally
 
-**Goal:** Integrate everything you’ve learned in a cohesive, functioning project.
+You can serve the site locally with a simple static server. From the project root run one of the following commands:
 
----
+- Using Python 3:
 
-## 🛠️🚀 Part 3: Best Practices for Code Organization
+```bash
+python3 -m http.server 8000
+```
 
-Before deployment, refactor your project to follow production-friendly practices:
+- Open your browser to `http://localhost:8000/` and navigate the pages. This ensures relative paths to CSS/JS/images work correctly.
 
-* Organize files in folders (`/css`, `/js`, `/images`, etc.)
-* Write clean, modular, and commented code
-* Use meaningful file names and relative paths
-* Validate your HTML/CSS and test on different screen sizes
+## Development notes
 
-**Goal:** Prepare your codebase to be readable, maintainable, and scalable.
+- Main JavaScript behavior is in `js/script.js`. Recent improvements include IntersectionObserver-based skill animations, staggered progress-bar delays, and ARIA attributes for better accessibility.
+- Styles live in `css/styles.css` and `css/responsive.css`. The project uses custom CSS variables for color themes and small helper classes like `.sr-only` for screen-reader-only content.
+- Icons are loaded from Lucide via CDN; Tailwind is used through the Tailwind CDN script tag.
 
----
+### Editing tips
 
-## 🌐🚀 Part 4: Introduction to Hosting and Deployment
+- To change a skill percentage, edit the `data-skill-level` attribute on the progress bar elements in `skills.html` — the JavaScript normalizes numeric values to percentages.
+- To add a project, create a new `.project-card` entry in `projects.html` and add the corresponding content in the `projectData` object inside `js/script.js` (used by the modal logic).
 
-Once your project is complete, choose a method to **host your site online**.
+## Accessibility
 
-You can use:
+- Progress bars include `role="progressbar"`, `aria-valuenow`, and `aria-valuetext` attributes to convey state to assistive tech.
+- A hidden `aria-live` region announces loaded skills when the animation runs.
+- Keyboard accessibility: Escape closes open modals and the mobile menu.
 
-* **GitHub Pages** (great for portfolios and static sites)
-* **Netlify** (powerful CI/CD features and easy form support)
-* **Vercel** (lightning-fast deployment for frontend projects)
+## Testing & Validation
 
-Deploy your project and confirm that:
+- Quick syntax check for `js/script.js` can be done with Node:
 
-* All links and scripts work
-* It loads properly on mobile and desktop
-* It has a clear, shareable URL
+```bash
+node --check js/script.js
+```
 
-**Goal:** Publish your work online and make it accessible to the world.
+- Manually test in multiple viewports, and check keyboard navigation and a screen reader to confirm announcements and focus behavior.
 
----
+## Contact
 
-## Deliverables
-
-1. A GitHub repository containing:
-
-   * Your complete project code, properly organized
-   * A `README.md` file explaining your project purpose, structure, and live URL
-2. A live deployed website (hosted via GitHub Pages, Netlify, or Vercel)
-
----
-
-## Outcome
-
-* Clarity and thoroughness of planning documentation
-* Proper use of HTML5, CSS, and JavaScript across multiple pages
-* Responsive and accessible design
-* Clean, well-organized, and commented code
-* Successful live deployment with a working link
-* Evidence of following best practices
+- Email: `charlesfred285@gmail.com`
+- Phone: `+254 706 367 840`
+- GitHub: [https://github.com/fredxotic](https://github.com/fredxotic)
+- Instagram: [https://www.instagram.com/fredxotic](https://www.instagram.com/fredxotic)
